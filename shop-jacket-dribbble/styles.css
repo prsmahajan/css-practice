@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 35px;
+  padding: 0 40px;
+  height: 100px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#nav a {
+  font-size: 20px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+#nav i {
+  background-color: #111;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+#center {
+  width: 100%;
+  padding: 20px 80px;
+}
+
+#center h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+#center-in {
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#center-in p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+#right {
+  width: 20%;
+}
+
+.elem {
+  padding: 10px 0;
+  border-top: 2px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.elem i {
+  font-size: 35px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+.elem:hover a {
+  text-decoration: underline;
+}
+
+.elem:hover i {
+  opacity: 1;
+}
+
+.elem a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#bottom {
+  height: 26.1%;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1506634572416-48cdfe530110?q=80&w=2785&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: 0 35%;
+}
+
+@media (max-width: 780px) {
+  #right {
+    display: flex;
+    flex-direction: col;
+    padding-top: 1rem;
+    margin-left: -2rem;
+  }
+
+  #center-in {
+    margin-bottom: 4rem;
+  }
+
+  .elem {
+    gap: 1rem;
+    border-top: none;
+    border-right: 2px solid #222;
+    padding-left: 10px;
+  }
+
+  .elem:last-child {
+    border-right: none;
+  }
+
+  #bottom {
+    margin-top: 2rem;
+  }
+}
