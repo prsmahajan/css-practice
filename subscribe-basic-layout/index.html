@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+
+<body class="bg-[#f3f5f8] flex justify-center items-center min-h-screen">
+    <div class="bg-white font-sans text-[#181028] rounded-lg p-8 w-full max-w-lg">
+        <h3 class="text-xl text-[#101221] text-center font-semibold mb-2">Let's keep in touch</h3>
+        <p class="flex flex-col items-center text-sm font-semibold text-gray-700">
+            <span>
+                 Subscribe to keep up with fresh news and exciting updates.
+            </span>
+            <span>
+                We promise not to spam you!
+            </span>
+        </p>
+        <form class="flex flex-col justify-center text-center mt-10">
+            <div class="flex gap-5 justify-center mb-3">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" class="pl-4 pr-12 py-2 border border-gray-300 placeholder:text-sm placeholder:font-semibold placeholder:text-[#6b6d82] outline-none">
+                <button class="px-8 py-1 text-[#fff] text-sm font-semibold bg-[#5191fe] flex items-center hover:bg-[#2f82ff] transition delay-100">SEND <i class="ri-arrow-right-line text-xl ml-2"></i></button>
+            </div>
+            <div class="relative ml-4">
+                <input type="checkbox" class="absolute left-2" name="check" id="check" style="top:0.45rem;">
+                <label for="check">
+                     <span class="text-sm font-semibold text-gray-600 pl-2" id="check">I agree to my email address being stored and used to receive monthly newsletter.</span>
+                </label>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
