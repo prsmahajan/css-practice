@@ -1,0 +1,92 @@
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50rem;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #232558;
+  padding: 1rem 2rem;
+}
+
+.ellipsis {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.ellipsis i {
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 2px solid #e47f7f;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.created {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.description {
+  margin: 1rem 1rem 2rem 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+}
+
+.loader h4 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-right: 2.5rem;
+}
+
+progress {
+  width: 100%;
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 1rem;
+  background-color: #616161;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 1rem;
+  background-color: #7edcd1;
+}
+
+.loader span {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+  font-weight: 800;
+}
+
+.profiles {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  zoom: 2;
+}
