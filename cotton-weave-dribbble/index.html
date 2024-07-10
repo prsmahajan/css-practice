@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main id="main">
@@ -30,7 +34,19 @@
           </p>
         </div>
       </section>
-      <section id="right"></section>
+      <section id="right">
+        <div id="right-top">
+          <h4>$488</h4>
+          <h5 id="rating">Rating</h5>
+        </div>
+      </section>
     </main>
+    <script>
+      const stars = document.querySelector("#rating");
+
+      for (let i = 1; i <= 4; i++) {
+        stars.innerHTML += `<i class="ri-star-s-fill"></i>`;
+      }
+    </script>
   </body>
 </html>
